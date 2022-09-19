@@ -70,18 +70,18 @@ char	*ft_strdup(const char *str)
 	char	*cast_dup;
 
 	i = 0;
-	s_len = ft_strlen(s);
+	s_len = ft_strlen(str);
 	cast_dup = (char *)malloc(sizeof(*cast_dup) * (i + 1));
 	while (i < s_len)
 	{
-		cast_dup[i] = s[i];
+		cast_dup[i] = str[i];
 		i++;
 	}
 	cast_dup[i] = '\0';
 	return (cast_dup);
 }
 
-char	*ft_strjoin(const char *str1, const char *str2)
+char	*ft_strjoin(const char *s1, const char *s2)
 {
 	int		i;
 	int		j;
